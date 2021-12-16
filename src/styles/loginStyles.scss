@@ -1,0 +1,111 @@
+#login-form {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  aside {
+    flex: 7;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkWhite);
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 8;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      h2 {
+        font-family: "Merriweather", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      h1 {
+        font-family: "Merriweather", sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 40px;
+      }
+
+      .textField {
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        padding: 15px;
+        width: 350px;
+        margin: 11px 0;
+      }
+
+      .rememberMe {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0;
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          input {
+            margin-right: 11px;
+          }
+        }
+      }
+
+      button {
+        width: 350px;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        color: var(--white);
+        margin-bottom: 16px;
+        transition: filter 0.2s;
+        background-color: var(--green);
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+
+      .googleAuth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: var(--darkBlue);
+
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--blue);
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.5);
+      }
+    }
+  }
+}

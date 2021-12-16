@@ -1,0 +1,22 @@
+* {
+  --green: #04c35c;
+  --blue: #2b6cb0;
+  --darkBlue: #1a202c;
+  --darkWhite: #f7fafc;
+  --white: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
+  color: var(--darkBlue);
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 16px "Lato", sans-serif;
+}
